@@ -1,0 +1,5 @@
+<label>Username</label>
+<input type="text" class="form-control" placeholder="Enter username" (input)="getUsernameInputValue($event)">
+<button (click)="onUpdateUsername()">Submit</button>
+<h3>{{ usernameInputValue }}</h3>
+<h4>{{ username }}</h4>
