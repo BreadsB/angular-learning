@@ -12,6 +12,7 @@ export class ServersComponent {
   allowNewServer = false;
   serverCreationStatus = 'No server was created!';
   serverName = 'InitialTest';
+  serverCreated = false;
 
   constructor() {
     setTimeout(()=> {
@@ -22,6 +23,7 @@ export class ServersComponent {
   ngOnInit() {}
 
   onCreateServer() {
+    this.serverCreated = true;
     this.serverCreationStatus = 'Server was created! Server name is: ' + this.serverName;
   }
 
