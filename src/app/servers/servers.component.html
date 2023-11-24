@@ -1,9 +1,8 @@
 <p>servers works!</p>
-<app-server></app-server>
-<app-server></app-server>
-<label>Server Name</label>
+<app-server *ngFor="let server of servers"></app-server>
+<label for="serverName">Server Name</label>
 <!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
-<input type="text" class="form-control" [(ngModel)]="serverName">
+<input id="serverName" type="text" class="form-control" [(ngModel)]="serverName">
 <!-- <p>{{ serverName }}</p> -->
 
 <button 
