@@ -1,4 +1,10 @@
 <p>servers works!</p>
 <app-server></app-server>
 <app-server></app-server>
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+<button 
+    class="btn btn-primary" 
+    [disabled]="!allowNewServer"
+    (click)="onCreateServer()">Add Server</button>
+<p [innerText]="allowNewServer"></p> <!-- Bind data as property -->
+<p>{{ allowNewServer }}</p> <!-- Bind data inside <p> -->
+<p>{{ serverCreationStatus }}</p>
